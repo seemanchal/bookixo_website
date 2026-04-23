@@ -261,3 +261,78 @@ body {
   color: var(--accent-gold);
   margin-bottom: 24px;
 }
+
+/* --- Mobile Luxury Responsive Overrides --- */
+@media (max-width: 768px) {
+  /* Global */
+  .heading-refined { letter-spacing: 0; }
+  
+  /* Portal */
+  .portal-wrap { padding: 40px 20px; }
+  .portal-header h1 { font-size: 38px; line-height: 1.1; }
+  .portal-header p { font-size: 16px; margin-bottom: 40px; }
+  
+  .selection-grid {
+    grid-template-columns: 1fr; /* Stack vertically */
+    gap: 20px;
+  }
+  
+  .selection-item {
+    height: 450px;
+  }
+  
+  .selection-content {
+    padding: 30px 20px;
+  }
+  
+  .selection-content h3 { font-size: 26px; }
+
+  /* Salon Page */
+  .nav-minimal {
+    padding: 20px;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .nav-links-p { display: none; } /* Hide secondary links on mobile */
+  
+  .max-w-7xl { padding: 80px 20px !important; }
+  
+  .max-w-7xl h1 { font-size: 42px !important; line-height: 1.1 !important; }
+  
+  .search-container-premium {
+    flex-direction: column;
+    border: none;
+    background: transparent;
+    box-shadow: none;
+    gap: 10px;
+  }
+  
+  .search-field-p {
+    background: #fff;
+    border: 1px solid var(--border-light) !important;
+    border-radius: 4px;
+    width: 100%;
+  }
+
+  .dark-vertical .search-field-p {
+    background: #1a1a1a;
+    border-color: #333 !important;
+  }
+  
+  .search-button-p {
+    width: 100%;
+    padding: 18px;
+    border-radius: 4px;
+  }
+  
+  /* Feature Grid */
+  .feature-grid-subtle {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    padding: 60px 0;
+  }
+  
+  .feat-item-minimal { text-align: center; }
+  .feat-icon-small { margin: 0 auto 16px; }
+}

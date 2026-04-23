@@ -126,7 +126,7 @@ function App() {
               <div className="logo-minimal" style={{ cursor: 'pointer' }} onClick={() => setView('portal')}>
                 Booki<span>xo</span>
               </div>
-              <div style={{ display: 'flex', gap: '40px', alignItems: 'center', fontSize: '13px', fontWeight: 600, letterSpacing: '1.5px' }}>
+              <div className="nav-links-p" style={{ display: 'flex', gap: '40px', alignItems: 'center', fontSize: '13px', fontWeight: 600, letterSpacing: '1.5px' }}>
                 <a href="#" style={{ color: 'white', textDecoration: 'none' }}>DISCOVER</a>
                 <a href="#" style={{ color: 'white', textDecoration: 'none' }}>MEMBERSHIP</a>
                 <div style={{ width: '1px', height: '16px', background: 'rgba(255,255,255,0.15)' }}></div>
