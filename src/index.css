@@ -300,6 +300,17 @@ body {
   
   .max-w-7xl h1 { font-size: 42px !important; line-height: 1.1 !important; }
   
+  /* Marquee Mobile Fix */
+  .marquee-track { gap: 15px !important; }
+  .marquee-track .selection-item { 
+    width: 280px !important; 
+    height: 200px !important; 
+  }
+  .marquee-container { margin: 0 -20px !important; }
+  
+  .marquee-track .selection-content { padding: 15px !important; }
+  .marquee-track .selection-content h3 { font-size: 16px !important; }
+
   .search-container-premium {
     flex-direction: column;
     border: none;
