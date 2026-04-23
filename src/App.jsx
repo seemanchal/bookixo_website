@@ -151,7 +151,7 @@ function App() {
                 </div>
                 <div className="search-field-p">
                   <MapPin size={20} color="#999" />
-                  <input type="text" placeholder="Bhubaneswar" defaultValue="Bhubaneswar" />
+                  <input type="text" placeholder="Bhubaneswar" />
                 </div>
                 <button className="search-button-p">Search</button>
               </div>
