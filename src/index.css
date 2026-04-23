@@ -262,6 +262,22 @@ body {
   margin-bottom: 24px;
 }
 
+.marquee-track {
+  display: flex;
+  gap: 30px;
+  animation: marquee 40s linear infinite;
+  will-change: transform;
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.marquee-track:hover {
+  animation-play-state: paused;
+}
+
 /* --- Mobile Luxury Responsive Overrides --- */
 @media (max-width: 768px) {
   /* Global */
