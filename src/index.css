@@ -17,6 +17,7 @@ body {
   background-color: var(--bg-primary);
   color: var(--text-main);
   overflow-x: hidden;
+  max-width: 100vw;
 }
 
 /* Video Background */
@@ -218,6 +219,8 @@ body {
   background-color: #0c0c0c;
   color: white !important;
   min-height: 100vh;
+  overflow-x: hidden;
+  max-width: 100vw;
 }
 
 .dark-vertical .search-container-premium {
@@ -269,6 +272,14 @@ body {
   will-change: transform;
 }
 
+.marquee-container {
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Hide scrollbar but keep scrollable */
+.marquee-container::-webkit-scrollbar { display: none; }
+.marquee-container { -ms-overflow-style: none; scrollbar-width: none; }
+
 @keyframes marquee {
   0% { transform: translateX(0); }
   100% { transform: translateX(-50%); }
@@ -316,11 +327,22 @@ body {
   
   .max-w-7xl h1 { font-size: 42px !important; line-height: 1.1 !important; }
   
-  /* Marquee Mobile Fix */
-  .marquee-track { gap: 15px !important; }
+  /* Marquee Mobile Fix - Swipeable */
+  .marquee-container {
+    overflow-x: auto !important;
+    margin: 0 !important;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x mandatory;
+  }
+  .marquee-track {
+    animation: none !important; /* Disable auto-scroll on mobile */
+    gap: 15px !important;
+  }
   .marquee-track .selection-item { 
     width: 280px !important; 
-    height: 200px !important; 
+    height: 200px !important;
+    scroll-snap-align: start;
+    flex-shrink: 0;
   }
   .marquee-container { margin: 0 -20px !important; }
   

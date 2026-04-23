@@ -161,7 +161,7 @@ function App() {
                   <h2 className="heading-refined" style={{ fontSize: '32px' }}>Trending Venues</h2>
                   <a href="#" style={{ color: 'var(--accent-gold)', textDecoration: 'none', fontWeight: 600 }}>VIEW ALL</a>
                 </div>
-                <div className="marquee-container" style={{ margin: '0 -40px', overflow: 'hidden' }}>
+                <div className="marquee-container" style={{ overflow: 'hidden', width: '100%' }}>
                   <div className="marquee-track" style={{ display: 'flex', gap: '30px' }}>
                     {[...venues, ...venues].map((v, i) => (
                       <div key={i} className="selection-item" style={{ height: '300px', width: '450px', flexShrink: 0 }}>
