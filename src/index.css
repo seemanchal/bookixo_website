@@ -316,12 +316,12 @@ body {
 
   /* Salon Page */
   .nav-minimal {
-    padding: 20px;
-    flex-direction: column;
-    gap: 20px;
+    padding: 16px 20px;
+    flex-direction: row;
+    justify-content: center;
   }
   
-  .nav-links-p { display: none; } /* Hide secondary links on mobile */
+  .nav-links-p { display: none !important; } /* Override inline flex */
   
   .max-w-7xl { padding: 80px 20px !important; }
   

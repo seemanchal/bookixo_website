@@ -34,14 +34,15 @@ function App() {
             className="portal-wrap"
           >
             <header className="portal-header">
-              <motion.h2 
+              <motion.div 
                 initial={{ opacity: 0, y: 10 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.2 }}
-                style={{ fontSize: '14px', letterSpacing: '4px', textTransform: 'uppercase', color: 'var(--accent-gold)', marginBottom: '16px' }}
+                className="logo-minimal"
+                style={{ fontSize: '36px', marginBottom: '16px' }}
               >
-                Bookixo Discovery
-              </motion.h2>
+                Book<span>ixo</span>
+              </motion.div>
               <motion.h1 
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -124,7 +125,7 @@ function App() {
             </div>
             <nav className="nav-minimal" style={{ position: 'relative', zIndex: 10 }}>
               <div className="logo-minimal" style={{ cursor: 'pointer' }} onClick={() => setView('portal')}>
-                Booki<span>xo</span>
+                Book<span>ixo</span>
               </div>
               <div className="nav-links-p" style={{ display: 'flex', gap: '40px', alignItems: 'center', fontSize: '13px', fontWeight: 600, letterSpacing: '1.5px' }}>
                 <a href="#" style={{ color: 'white', textDecoration: 'none' }}>DISCOVER</a>
